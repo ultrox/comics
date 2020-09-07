@@ -1,4 +1,9 @@
 .cartoon {
+    --skin: #fca;
+    --dark: #e96;
+    --hair: #630;
+    --robe: #222;
+
     position: relative;
     width: 80vmin;
     height: 90vmin;
@@ -12,7 +17,7 @@
 
 .glasses {
     --size: 12vmin;
-
+    background: var(--skin);
     top: 23.5%;
     width: var(--size);
     height: var(--size);
@@ -43,4 +48,24 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.lower-head {
+    top: 31%;
+    left: 17%;
+    width: 47vmin;
+    height: 10vmin;
+    border-radius: 77% 61% 100% 100% / 0% 0% 100% 100%; 
+
+}
+.mouth {
+    --size: 2.5vmin;
+
+    width: var(--size);
+    height: var(--size);
+    left: 50%;
+    top: 28%;
+    border: 1vmin solid;
+    transform: translateX(-50%) rotate(45deg);
+    border-color: transparent black black transparent;
 }
