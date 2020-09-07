@@ -56,6 +56,7 @@
     width: 47vmin;
     height: 10vmin;
     border-radius: 77% 61% 100% 100% / 0% 0% 100% 100%; 
+    background: var(--skin);
 
 }
 .mouth {
@@ -68,4 +69,21 @@
     border: 1vmin solid;
     transform: translateX(-50%) rotate(45deg);
     border-color: transparent black black transparent;
+}
+
+.ears {
+    --size: 4vmin;
+    
+    top: 28vmin;
+    width: var(--size);
+    height: var(--size);
+    background: var(--skin);
+}
+
+.e1 {
+    left: 11vmin;
+}
+
+.e2 {
+    right: 14.5vmin;
 }
