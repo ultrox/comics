@@ -3,7 +3,6 @@
     --dark: #e96;
     --hair: #630;
     --robe: #222;
-
     position: relative;
     width: 80vmin;
     height: 90vmin;
@@ -55,13 +54,12 @@
     left: 17%;
     width: 47vmin;
     height: 10vmin;
-    border-radius: 77% 61% 100% 100% / 0% 0% 100% 100%; 
+    border-radius: 77% 61% 100% 100% / 0% 0% 100% 100%;
     background: var(--skin);
-
 }
+
 .mouth {
     --size: 2.5vmin;
-
     width: var(--size);
     height: var(--size);
     left: 50%;
@@ -73,7 +71,6 @@
 
 .ears {
     --size: 4vmin;
-    
     top: 28vmin;
     width: var(--size);
     height: var(--size);
@@ -86,4 +83,44 @@
 
 .e2 {
     right: 14.5vmin;
+}
+
+.upper-head {
+    top: 15vmin;
+    left: 18%;
+    background: var(--skin);
+    width: 48vmin;
+    height: 15vmin;
+}
+
+.shall-top {
+    top: 42%;
+    left: 28%;
+    width: 30vmin;
+    height: 7vmin;
+    border-radius: 10% 10% 13% 15% / 0% 0% 100% 78%;
+    background: rgb(255, 109, 0);
+    background-image: 
+        repeating-linear-gradient(
+        90deg,
+        orange,
+        orange 20%,
+        red 20%,
+        red 45%
+        );
+}
+
+.shall-2 {
+    top: 42%;
+    left: 33%;
+    width: 9vmin;
+    height: 30vmin;
+    background: rgb(255, 109, 0);
+    background-image: 
+        repeating-linear-gradient(
+        orange,
+        orange 20%,
+        red 20%,
+        red 45%
+        );
 }
