@@ -1,0 +1,222 @@
+.cartoon {
+    --iris: #39c;
+    --skin: #86a;
+    --hair: #333;
+    border: 3vmin solid;
+    background: #ccc;
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.cartoon * {
+    position: absolute;
+}
+
+.eye {
+    background: white;
+    width: 10vmin;
+    height: 10vmin;
+    top: 38%;
+    left: 43%;
+}
+
+.eye2 {
+    top: 37%;
+    left: 54%;
+}
+
+.iris {
+    width: 2vmin;
+    height: 2vmin;
+    background: white;
+    top: 37%;
+    left: 56%;
+    box-shadow: -1vmin -1.3vmin 0 -0.5vmin white, inset -0.5vmin -0.4vmin 0 0.65vmin black, 0 0 0 1.8vmin var(--iris);
+}
+
+.nose {
+    background: var(--skin);
+    top: 46%;
+    left: 51%;
+    width: 7.2vmin;
+    height: 3.4vmin;
+    border-radius: 0 2vmin 2vmin 0;
+}
+
+.face {
+    top: 27%;
+    left: 37%;
+    width: 25vmin;
+    height: 30vmin;
+    border-radius: 23% 10% 57% 57%;
+    background: var(--skin);
+}
+
+.mouth {
+    top: 55%;
+    left: 49%;
+    width: 10vmin;
+    height: 3vmin;
+    background: red;
+    border-radius: 0 0 3vmin 3vmin;
+}
+
+.tooth {
+    top: -0.4vmin;
+    left: 1.1vmin;
+    width: 1.5vmin;
+    height: 2vmin;
+    border-radius: 0 0 0vmin 3vmin;
+    background: white;
+}
+
+.t2 {
+    left: unset;
+    /* do you know why I did this?*/
+    right: 1.1vmin;
+    transform: rotateY(180deg);
+}
+
+.hair-top {
+    width: 31vmin;
+    height: 11vmin;
+    background: var(--hair);
+    top: 19%;
+    left: 33%;
+    z-index: 1;
+}
+
+.hair-side {
+    width: 10vmin;
+    height: 11vmin;
+    background: var(--hair);
+    top: 27%;
+    left: 29%;
+    border-top-color: transparent;
+    transform: rotate(25deg);
+    z-index: 3;
+}
+
+.hair-right {
+    width: 10vmin;
+    height: 11vmin;
+    background: var(--hair);
+    top: 27%;
+    left: 58%;
+}
+
+.left-ear {
+    width: 8vmin;
+    height: 9vmin;
+    background: red;
+    top: 41%;
+    left: 31%;
+    border-right-color: transparent;
+    transform: rotate(5deg);
+    background: var(--skin);
+}
+
+.left-ear::before {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 4vmin;
+    height: 4vmin;
+    transform: rotate(13deg);
+    background: var(--skin);
+    border: 0.5vmin solid black;
+    top: 24%;
+    left: 21%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.left-ear::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    border: 0.5vmin solid black;
+    width: 1.3vmin;
+    height: 2vmin;
+    background: var(--skin);
+    top: 36%;
+    left: 52%;
+    border-right-color: transparent;
+    transform: rotate(3deg);
+}
+
+.beard {
+    width: 7vmin;
+    height: 1.3vmin;
+    background: var(--skin);
+    border-top: 0;
+    border-radius: 0 0 1.6vmin 1.5vmin;
+    top: 64%;
+    left: 49%;
+}
+
+.neck {
+    width: 12vmin;
+    height: 7.5vmin;
+    background: var(--skin);
+    top: 62%;
+    left: 45%;
+}
+
+.shirt-neck {
+    height: 4vmin;
+    background: #ffffff;
+}
+
+.shirt-neck-2 {
+    top: 67%;
+    left: 56.3%;
+    width: 4vmin;
+    transform: skew(-10deg) rotate(-10deg);
+}
+
+.shirt-neck-1 {
+    top: 67%;
+    left: 42%;
+    width: 8vmin;
+    transform: rotate(10deg) skew(10deg);
+}
+
+.shirt-cube {
+    width: 2vmin;
+    height: 2vmin;
+    top: 66.9%;
+    border: solid 0.5vmin;
+    left: 52.9%;
+    /* background: violet; */
+    clip-path: polygon(0% 100%, 100% 0%, 1000% 500%, 100% 500%);
+    transform: rotate(45deg);
+    box-shadow: 1vmin 2vmin 0 7vmin white
+}
+
+.body {
+    width: 44vmin;
+    height: 46vmin;
+    background: #fff;
+    top: 69%;
+    border-radius: 50%;
+    left: 24%;
+}
+
+.buttons {
+    width: 1vmin;
+    height: 1vmin;
+    background: black;
+    box-shadow: inset 0 0 0 3px white;
+}
+.b1 { top: 74%; left: 53.5%; }
+.b2 { top: 84%; left: 53.5%; }
+.b3 { top: 94%; left: 53.5%; }
+.b4 { top: 104%; left: 53.5%; }
