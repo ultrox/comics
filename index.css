@@ -11,17 +11,18 @@
 }
 
 .glasses {
-    width: 14vmin;
-    height: 14vmin;
+    --size: 12vmin;
+
+    top: 23.5%;
+    width: var(--size);
+    height: var(--size);
 }
 
 .glass-2 {
-    top: 18%;
-    left: 50%;
+    left: 53%;
 }
 
 .glass-1 {
-    top: 18%;
     left: 25%;
 }
 
@@ -30,7 +31,6 @@
     height: 3vmin;
     background: #fff;
     box-shadow: inset -2px -0.5vmin 0 1.1vmin #000;
-    ;
 }
 
 .eye-2 {
