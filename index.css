@@ -170,3 +170,36 @@
     left: 49%;
     border-radius: 0 8vmin 0 0;
 }
+
+.hands {
+    width: 20vmin;
+    height: 25vmin;
+    background-color: var(--robe);
+}
+
+.hands.left {
+    top: 47%;
+    left: 21%;
+    transform: rotate(5deg);
+    border-radius: 25vmin 0 0 0;
+}
+
+.hands.right {
+    top: 47%;
+    right: 25.5%;
+    transform: rotate(-5deg);
+    border-radius: 0% 25em 0px 0px;
+}
+
+.fists {
+    --size: 9.5vmin;
+    width: var(--size);
+    height: var(--size);
+    background: var(--skin);
+    top:72%;
+    border-radius: 50%;
+}
+
+.left-fist { left: 20%; }
+
+.right-fist { right: 24%; }
