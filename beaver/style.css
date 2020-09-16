@@ -1,15 +1,50 @@
 .cartoon { 
-    /* code */
+    --skin: brown;
+    position: relative;
+    margin: 0 auto;
+    width: 80vmin;
+    height: 95vmin;
 } 
 
+.body {
+    border-radius: 50% 50% 0 0 ;
+    background: var(--skin);
+    width: 70%;
+    height: 90%;
+
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.ear {
+    top: 15%;
+    width: 16vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: inset 0 0 0 1.5vmin var(--skin);
+}
+.ear-l { left: 13%; }
+
+.ear-r { 
+    left: unset;
+    right: 13%;
+    transform: scaleX(-1);
+}
+
 img {
+    top: 0;
     position: absolute;
     pointer-events: none;
+    opacity: 0.5;
+    display: none;
     width: 80vmin;
 }
 
+.cartoon * { position: absolute; }
 .r { border-radius: 50%; }
-.b { border: 0.5vmin solid; }
+.b { border: 1vmin solid; }
 
 .sb::before {
     content: "";
