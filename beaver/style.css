@@ -105,3 +105,13 @@ img {
     right: 15%; 
     transform: scaleX(-1) rotate(-10deg)
 }
+
+.nose {
+    width: 10vmin;
+    height: 8vmin;
+    border-radius: 9vmin 9vmin 4vmin 4vmin;
+    background: var(--nose);
+    left: 50%;
+    transform: translate(-50%);
+    top: 38%;
+}
