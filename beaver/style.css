@@ -89,5 +89,19 @@ img {
 }
 
 .cheak {
+    background: var(--cheak);
+    width: 20vmin;
+    height: 12.5vmin;
+    border-radius: 50% 0 0 50%;
+}
 
+.cheak-l { 
+    top: 41%; left: 18%; 
+    transform: rotate(-10deg);
+}
+
+.cheak-r {
+    top: 41%; 
+    right: 15%; 
+    transform: scaleX(-1) rotate(-10deg)
 }
