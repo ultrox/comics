@@ -115,3 +115,17 @@ img {
     transform: translate(-50%);
     top: 38%;
 }
+
+.tooth {
+    width: 5vmin;
+    height: 7vmin;
+    background: var(--tooth);
+    top: 52%;
+    left: 42%;
+    border-radius: 0 0 0 2vmin;
+}
+
+.tooth + .tooth {
+    transform: scaleX(-1);
+    left: 52%;
+}
