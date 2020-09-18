@@ -129,3 +129,26 @@ img {
     transform: scaleX(-1);
     left: 52%;
 }
+
+.bow::before,
+.bow {
+    border-radius: 5% 50% 50% 5%;
+    background: var(--bow);
+    position: absolute;
+}
+
+.bow {
+    top: 8%;
+    left: 51.5%;
+    width: 7vmin; height: 6vmin;
+    transform: rotate(10deg);
+}
+
+.bow::before {
+    content: "";
+    display: block;
+    left: 100%;
+    width: 100%; height: 100%;
+    transform: scaleX(-1);
+
+}
