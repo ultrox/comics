@@ -237,3 +237,35 @@ img {
     border-radius: 50%;
     top: -50%;
 }
+
+.arm {
+    width: 25vmin;
+    height: 15vmin;
+    background: var(--skin);
+    border-radius: 0 50% 50% 0;
+    transform: skewY(10deg);
+    overflow: hidden;
+}
+
+.arm-l {
+    bottom: 10%;
+    left: -1vmin;
+}
+
+.arm-r {
+    bottom: 10%;
+    right: -1vmin;
+    transform: scaleX(-1) skewY(10deg);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.cartoon {
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
