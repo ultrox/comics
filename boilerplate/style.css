@@ -1,0 +1,47 @@
+:root {
+    --bg: rgb(194,21,74);
+    --skin: rgb(240,204,201);
+    --skin-shadoy: rgb(204,168,164);
+    --brk: rgb(34,30,31);
+    --pants: #000;
+    --cloth: #fff;
+    --kutlaca: rgb(175,145,117);
+    --kutlaca-sjenka: rgb(114,86,60);
+    --masna: rgb(198,43,107);
+    --obrve: rgb(35,30,32);
+    --usta: #000;
+}
+
+.b {
+    border: 0.4vmin solid;
+}  
+
+.r {
+    border-radius: 50%;
+}
+
+*::after,
+*::before,
+.cartoon * {
+    position: absolute;
+}
+
+.ba::after,
+.hb::before {
+    content: "";
+    display: block;
+}
+
+img {
+    width: 80vmin;
+    position: absolute;
+    opacity: 0.5;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.cartoon {}
+
+body {
+    background: var(--bg);
+}
