@@ -1,6 +1,14 @@
-.cartoon * { position: absolute; }
-.r { border-radius: 50%; }
-.b { border: 1vmin solid; }
+.cartoon * {
+    position: absolute;
+}
+
+.r {
+    border-radius: 50%;
+}
+
+.b {
+    border: 1vmin solid;
+}
 
 .sb::before {
     content: "";
@@ -13,28 +21,27 @@
     display: block;
     position: absolute;
 }
-.cartoon { 
-    --skin: hsla(19,50%,43%,1);
-    --inside-ear: hsla(22,79%,72%,1);
-    --nose: hsla(18,48%,16%,1);
-    --cheak: hsla(34,100%,81%,1);
-    --hart: hsla(358,52%,88%,1);
-    --tooth: hsla(0,0%,100%,1);
-    --bow: hsla(358,52%,88%,1);
-    --bg: hsla(358,52%,88%,1);
 
+.cartoon {
+    --skin: hsla(19, 50%, 43%, 1);
+    --inside-ear: hsla(22, 79%, 72%, 1);
+    --nose: hsla(18, 48%, 16%, 1);
+    --cheak: hsla(34, 100%, 81%, 1);
+    --hart: hsla(358, 52%, 88%, 1);
+    --tooth: hsla(0, 0%, 100%, 1);
+    --bow: hsla(358, 52%, 88%, 1);
+    --bg: hsla(358, 52%, 88%, 1);
     position: relative;
     margin: 0 auto;
     width: 80vmin;
     height: 95vmin;
-} 
+}
 
 .body {
-    border-radius: 50% 50% 0 0 ;
+    border-radius: 50% 50% 0 0;
     background: var(--skin);
     width: 70%;
     height: 90%;
-
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -48,9 +55,12 @@
     background: var(--inside-ear);
     box-shadow: inset 0 0 0 1.5vmin var(--skin);
 }
-.ear-l { left: 13%; }
 
-.ear-r { 
+.ear-l {
+    left: 13%;
+}
+
+.ear-r {
     left: unset;
     right: 13%;
     transform: scaleX(-1);
@@ -64,20 +74,36 @@
     transform: rotate(-43deg);
 }
 
-.eye-l { left: 25%; }
-.eye-r { right: 25%; }
+.eye-l {
+    left: 25%;
+}
 
-.two,
-.three,
-.one {
+.eye-r {
+    right: 25%;
+}
+
+.two, .three, .one {
     width: 1.8vmin;
     height: 1vmin;
     background: black;
 }
 
-.one { top: 18%; left: -63%; }
-.two { top: 130%; left: 40%; transform: rotate(-87deg)}
-.three { top: 98%; left: -35%; transform: rotate(-45deg)}
+.one {
+    top: 18%;
+    left: -63%;
+}
+
+.two {
+    top: 130%;
+    left: 40%;
+    transform: rotate(-87deg)
+}
+
+.three {
+    top: 98%;
+    left: -35%;
+    transform: rotate(-45deg)
+}
 
 img {
     top: 0;
@@ -95,14 +121,15 @@ img {
     border-radius: 50% 0 0 50%;
 }
 
-.cheak-l { 
-    top: 41%; left: 18%; 
+.cheak-l {
+    top: 41%;
+    left: 18%;
     transform: rotate(-10deg);
 }
 
 .cheak-r {
-    top: 41%; 
-    right: 15%; 
+    top: 41%;
+    right: 15%;
     transform: scaleX(-1) rotate(-10deg)
 }
 
@@ -125,13 +152,12 @@ img {
     border-radius: 0 0 0 2vmin;
 }
 
-.tooth + .tooth {
+.tooth+.tooth {
     transform: scaleX(-1);
     left: 52%;
 }
 
-.bow::before,
-.bow {
+.bow::before, .bow {
     border-radius: 5% 50% 50% 5%;
     background: var(--bow);
     position: absolute;
@@ -140,7 +166,8 @@ img {
 .bow {
     top: 8%;
     left: 51.5%;
-    width: 7vmin; height: 6vmin;
+    width: 7vmin;
+    height: 6vmin;
     transform: rotate(10deg);
 }
 
@@ -148,17 +175,65 @@ img {
     content: "";
     display: block;
     left: 100%;
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     transform: scaleX(-1);
-
 }
 
 .brk {
     width: 25vmin;
     height: 0.5vmin;
     background: #000;
- }
+}
 
-.one1   { left: -75%; top: 60%; }
-.two2   { left: -75%; top: 30%; transform: rotate(10deg);}
-.three3 { left: -75%; top: 0; transform: rotate(20deg);}
+.one1 {
+    left: -75%;
+    top: 60%;
+}
+
+.two2 {
+    left: -75%;
+    top: 30%;
+    transform: rotate(10deg);
+}
+
+.three3 {
+    left: -75%;
+    top: 0;
+    transform: rotate(20deg);
+}
+
+.hart {
+    --size: 14vmin;
+    width: var(--size);
+    height: var(--size);
+    background: black;
+    bottom: 10%;
+    left: 50%;
+    background: var(--hart);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.hart::after,
+.hart::before {
+    background: var(--hart);
+    border-radius: 50%;
+}
+
+.hart::before, .hart::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hart::before {
+    right: 50%;
+    border-radius: 50%;
+}
+
+.hart::after {
+    border-radius: 50%;
+    top: -50%;
+}
