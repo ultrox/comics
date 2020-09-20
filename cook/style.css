@@ -10,6 +10,7 @@ html {
     --masna: rgb(198,43,107);
     --obrve: rgb(35,30,32);
     --usta: #000;
+    --eyes-offset: 24.3%;
 }
 
 .b {
@@ -38,6 +39,7 @@ img {
     opacity: 0.5;
     left: 50%;
     transform: translate(-50%);
+    pointer-events: none;
     /* opacity: 1; */
 }
 
@@ -56,13 +58,13 @@ img {
 .head {
     width: 35.5vmin;
     height: 34.5vmin;
-    top: 25vmin;
+    top: 24vmin;
     left: 35vmin;
     background: var(--skin);
 }
 
 .eye {
-    top: 28%;
+    top: var(--eyes-offset);
     background: #000;
     box-shadow: 0 0 0 2.5vmin white, 0 0 0 3.2vmin black;
 }
@@ -98,8 +100,8 @@ img {
 }
 
 .nose {
-    top: 40%;
-    left: 40%;
+    top: calc(var(--eyes-offset) * 1.6);
+    left: 41%;
     width: 3.5vmin;
     height: 2.5vmin;
     background-color: var(--skin);
@@ -107,4 +109,22 @@ img {
 }
 body {
     background: var(--bg);
+}
+
+.brk {
+    top: 39%;
+    left: 15%;
+    --size: 10vmin;
+    width: calc(var(--size) * 1.2);
+    height: var(--size);
+    background: var(--brk);
+    
+}
+
+.brk::before {
+    border-radius: 50%;
+    left: 11.2vmin;
+    width: 100%;
+    height: 100%;
+    background: var(--brk);
 }
