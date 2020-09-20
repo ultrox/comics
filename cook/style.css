@@ -1,4 +1,4 @@
-:root {
+html {
     --bg: rgb(194,21,74);
     --skin: rgb(240,204,201);
     --skin-shadoy: rgb(204,168,164);
@@ -38,7 +38,7 @@ img {
     opacity: 0.5;
     left: 50%;
     transform: translate(-50%);
-    /* opacity: 0; */
+    /* opacity: 1; */
 }
 
 .cartoon {
@@ -58,17 +58,53 @@ img {
     height: 34.5vmin;
     top: 25vmin;
     left: 35vmin;
+    background: var(--skin);
 }
 
 .eye {
-    top: 22%;
+    top: 28%;
     background: #000;
     box-shadow: 0 0 0 2.5vmin white, 0 0 0 3.2vmin black;
 }
 
-.eye-l { left: 31%; }
-.eye-r { right: 35%; }
+.eye-l { 
+    left: 31%; 
+}
 
+.eye-r { 
+    right: 35%; 
+}
+
+
+.eye::before {
+    top: -10vmin;
+    width: 5.3vmin;
+    height: 2.1vmin;
+
+    border-radius: 1vmin;
+    background: #000;
+}
+
+.eye-r::before {
+    left: -1vmin;
+    transform-origin: right;
+    transform: translateX(-50%) rotate(12deg);
+}
+
+.eye-l::before {
+    left: 2vmin;
+    transform-origin: left;
+    transform: translateX(-50%) rotate(-11deg);
+}
+
+.nose {
+    top: 40%;
+    left: 40%;
+    width: 3.5vmin;
+    height: 2.5vmin;
+    background-color: var(--skin);
+    border-radius: 4vmin 
+}
 body {
     background: var(--bg);
 }
