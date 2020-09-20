@@ -13,7 +13,7 @@
 }
 
 .b {
-    border: 0.4vmin solid;
+    border: 0.7vmin solid;
 }  
 
 .r {
@@ -38,9 +38,36 @@ img {
     opacity: 0.5;
     left: 50%;
     transform: translate(-50%);
+    /* opacity: 0; */
 }
 
-.cartoon {}
+.cartoon {
+    border: 1px solid blue;
+    width: 80vmin;
+    height: 80vmin;
+    /* background: orange; */
+    margin: 0 auto;
+
+    background-size: 4vmin 4vmin;
+    background-image: linear-gradient(to right, blue 1px, transparent 1px),
+                      linear-gradient(to bottom, blue 1px, transparent 1px);
+}
+
+.head {
+    width: 35.5vmin;
+    height: 34.5vmin;
+    top: 25vmin;
+    left: 35vmin;
+}
+
+.eye {
+    top: 22%;
+    background: #000;
+    box-shadow: 0 0 0 2.5vmin white, 0 0 0 3.2vmin black;
+}
+
+.eye-l { left: 31%; }
+.eye-r { right: 35%; }
 
 body {
     background: var(--bg);
