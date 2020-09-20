@@ -81,7 +81,7 @@ img {
 
 
 .eye::before {
-    top: -10vmin;
+    top: -8vmin;
     width: 5.3vmin;
     height: 2.1vmin;
 
@@ -155,4 +155,37 @@ body {
 /* podvoljak */
 .mouth::after {
 
+}
+
+.kapa {
+    background: white;
+    width: 16vmin;
+    height: 14vmin;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+}
+
+.k {
+    background: white;
+    --size: 8vmin;
+    top: -30%;
+    width: var(--size);
+    height: var(--size);
+    /* border-color: red green blue orange; */
+    transform: rotate(45deg);
+    border-radius: 50%;
+}
+.k1 {
+    left: -30%;
+    border-right-color: transparent;
+}
+.k2 {
+    left:25%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.k3 {
+    left: 71%;
+    border-bottom-color: transparent;
 }
