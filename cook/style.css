@@ -40,7 +40,8 @@ img {
     left: 50%;
     transform: translate(-50%);
     pointer-events: none;
-    opacity: 1;
+    /* opacity: 1; */
+    opacity: 0;
 }
 
 .cartoon {
@@ -57,8 +58,8 @@ img {
 }
 
 .head {
-    width: 35.5vmin;
-    height: 34.5vmin;
+    width: 32vmin;
+    height: 30.5vmin;
     top: 24vmin;
     left: 50%;
     transform: translateX(-50%);
@@ -114,8 +115,8 @@ body {
 }
 
 .brk {
-    top: 39%;
-    left: 15%;
+    top: 40%;
+    left: 12%;
     --size: 10vmin;
     width: calc(var(--size) * 1.2);
     height: var(--size);
