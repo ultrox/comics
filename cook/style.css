@@ -27,7 +27,7 @@ html {
     position: absolute;
 }
 
-.ba::after,
+.ha::after,
 .hb::before {
     content: "";
     display: block;
