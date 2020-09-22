@@ -200,3 +200,13 @@ body {
     left: 71%;
     border-bottom-color: transparent;
 }
+
+.body {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23vmin;
+    height: 19vmin;
+    background: white;
+
+}
