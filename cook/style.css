@@ -224,3 +224,44 @@ body {
     left: 21vmin;
     transform: rotate(-45deg);
 }
+
+.lower-part {
+    top: 19vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25vmin;
+    height: 6vmin;
+    background: black;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+.right-leg {
+    --size: 7vmin;
+
+    right: -3vmin;
+    top: -0.7vmin;
+    width: var(--size);
+    height: var(--size);
+    background: #000;
+    border-radius: 50%;
+}
+
+.right-leg::after {
+    width: 5vmin;
+    height: 5vmin;
+    background: #000;
+    top: 2vmin;
+    right: 0.5vmin;
+}
+
+.right-leg::before {
+    top: 6vmin;
+    width: 7vmin;
+    height: 3vmin;
+    background: white;
+    border: 0.5vmin solid;
+    border-top-right-radius: 100%;
+    border-top-right-radius: 100%;
+    right: -2vmin;
+}
