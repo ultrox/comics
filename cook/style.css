@@ -40,7 +40,7 @@ img {
     left: 50%;
     transform: translate(-50%);
     pointer-events: none;
-    /* opacity: 1; */
+    opacity: 1;
     /* opacity: 0; */
 }
 
@@ -206,7 +206,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 23vmin;
-    height: 19vmin;
+    height: 17vmin;
     background: white;
 
 }
@@ -226,7 +226,7 @@ body {
 }
 
 .lower-part {
-    top: 19vmin;
+    top: 15vmin;
     left: 50%;
     transform: translateX(-50%);
     width: 25vmin;
@@ -240,7 +240,7 @@ body {
     --size: 7vmin;
 
     right: -3vmin;
-    top: -0.7vmin;
+    top: 0;
     width: var(--size);
     height: var(--size);
     background: #000;
@@ -259,9 +259,14 @@ body {
     top: 6vmin;
     width: 7vmin;
     height: 3vmin;
-    background: white;
+    background: black;
     border: 0.5vmin solid;
     border-top-right-radius: 100%;
     border-top-right-radius: 100%;
     right: -2vmin;
+}
+
+.right-leg + .right-leg {
+    left: -3vmin;
+    transform: scaleX(-1);
 }
