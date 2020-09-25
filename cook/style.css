@@ -7,7 +7,7 @@ html {
     --cloth: #fff;
     --kutlaca: rgb(175, 145, 117);
     --kutlaca-sjenka: rgb(114, 86, 60);
-    --masna: rgb(198, 43, 107);
+    --bow: rgb(198, 43, 107);
     --obrve: rgb(35, 30, 32);
     --usta: #000;
     --eyes-offset: 24.3%;
@@ -207,6 +207,7 @@ body {
     width: 23vmin;
     height: 17vmin;
     background: white;
+    border-radius: 12% 12% 0% 0% / 100% 100% 0% 0%;
 }
 
 .body::after, .body::before {
@@ -232,7 +233,7 @@ body {
     background-image: radial-gradient( black 20%, transparent 1%);
     background-color: white;
     left: 50%;
-    top: 44%;
+    top: 49%;
     transform: translateX(-50%);
 }
 
@@ -294,4 +295,37 @@ body {
 .right-leg+.right-leg {
     left: -3vmin;
     transform: scaleX(-1);
+}
+
+.bow {
+    position: absolute;
+    left: 44%;
+    top: 31%;
+    width: 3vmin;
+    height: 4vmin;
+    background: var(--bow);
+    border-radius: 0% 100% 0% 100%;
+    transform: translateX(-50%) rotate(107deg);
+    border: 0.5vmin solid;
+}
+
+.bow::after {
+    width: 70%;
+    height: 55%;
+    background: var(--bow);
+    border: 0.4vmin solid;
+    border-radius: 50%;
+    top: -12%;
+    right: 56%;
+}
+
+.bow::before {
+    width: 100%;
+    height: 100%;
+    border: 0.5vmin solid;
+    background: var(--bow);
+    border-radius: 0% 100% 0% 100%;
+    transform: rotate(47deg);
+    top: -74%;
+    right: 20%;
 }
