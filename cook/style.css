@@ -225,6 +225,17 @@ body {
     top: 2vmin;
 }
 
+.buttons {
+    width: 7vmin;
+    height: 7vmin;
+    background-size: 50% 50%;
+    background-image: radial-gradient( black 20%, transparent 1%);
+    background-color: white;
+    left: 50%;
+    top: 44%;
+    transform: translateX(-50%);
+}
+
 .arm {
     width: 8vmin;
     height: 20vmin;
@@ -235,7 +246,7 @@ body {
     border-bottom: 0px;
 }
 
-.arm + .arm {
+.arm+.arm {
     left: 24%;
     transform: rotate(-45deg);
 }
