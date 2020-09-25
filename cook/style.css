@@ -43,13 +43,11 @@ img {
 
 .cartoon {
     position: relative;
-    border: 1px solid blue;
     width: 80vmin;
     height: 80vmin;
     /* background: orange; */
     margin: 0 auto;
     background-size: 4vmin 4vmin;
-    background-image: linear-gradient(to right, blue 1px, transparent 1px), linear-gradient(to bottom, blue 1px, transparent 1px);
 }
 
 .head {
